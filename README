@@ -1,0 +1,14 @@
+# Tiny KV API (FastAPI + SQLite)
+
+Minimal 3-endpoint KV store:
+- GET /set?key=foo&val=bar
+- GET /get?key=foo
+- GET /keys
+Health: GET /health
+
+Deploy: Use Railway Template → Done  
+Test:
+curl "$URL/health"
+curl "$URL/set?key=hello&val=world"
+curl "$URL/get?key=hello"
+curl "$URL/keys"
